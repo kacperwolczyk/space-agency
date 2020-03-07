@@ -31,7 +31,6 @@ public class CustomUserDetailsService implements UserDetailsService {
             user.getLogin(), 
             user.getPassword(), 
             convertAuthorities(user.getRole()));
-    System.out.println(userDetails.toString());
     return userDetails;
   }
   
